@@ -29,6 +29,7 @@
  * Bit value macro - useful for setting & testing bits.
  */
 #define BV(x) (1 << (x))
+#define BTST(x, b) ((x & BV(b)) != 0)
 
 /**
  *  Checks if given x,y is in specified tRect.
